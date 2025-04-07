@@ -1,0 +1,12 @@
+config:
+  target: 'https://www.xenonstack.com/'
+  phases:
+    - duration: 300   # 5 minutes total duration
+      arrivalRate: 10  # 10 virtual users arriving per second
+
+scenarios:
+  - name: "GET Endpoint Test"
+    flow:
+      - get:
+          url: "https://www.xenonstack.com/"
+         
